@@ -1,0 +1,95 @@
+/* App.css */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.page-container {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+
+.counter-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Hide any potential overflow */
+}
+
+.counter-level-wrapper {
+    position: absolute;
+    bottom: 0;  /* Start from the bottom */
+    left: 0;
+    width: 100%;
+    height: 0; /* Initial height is ZERO */
+}
+
+.counter-level {
+    position: absolute; /* Essential for bottom positioning */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* Height determined by animation */
+    background-color: lightblue;
+    transition: height 0.3s ease, background-color 0.3s ease;
+    z-index: 0;
+}
+
+.counter-controls {
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.text-editor-container {
+    border: 1px solid #ccc;
+    flex-grow: 1;
+}
+
+.title {
+    z-index: 1;
+}
+/* Add more specific styles as needed */
